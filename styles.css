@@ -2,6 +2,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    font-weight: bold;
+    font-size: 18px; /* Adjust the font size as needed */
 }
 
 .background {
@@ -11,7 +13,7 @@ body {
     width: 100%;
     height: 100%;
     z-index: -1;
-    animation: backgroundAnimation 20s linear infinite;
+    animation: backgroundAnimation 6s linear infinite;
 }
 
 @keyframes backgroundAnimation {
@@ -33,20 +35,20 @@ body {
 }
 
 .container {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.7);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #d1caca;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
 h1 {
-    color: #fff;
-    font-size: 2em;
+    color: #080808;
+    font-size: 1.8em;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 5px rgba(8, 240, 182, 0.8);
 }
 
 .word-container {
@@ -54,19 +56,19 @@ h1 {
 }
 
 #word {
-    font-size: 2em;
+    font-size: 3em;
     font-weight: bold;
     color: #007bff;
 }
 
 input[type="text"] {
-    width: 100%;
+    width: 80%;
     padding: 10px;
     margin-top: 10px;
     border: none;
     border-radius: 5px;
-    font-size: 1em;
-    background-color: rgba(255, 255, 255, 0.9);
+    font-size: 1.2em;
+    background-color: #f8f8f8;
     transition: background-color 0.3s ease;
 }
 
@@ -75,7 +77,6 @@ input[type="text"]:focus {
 }
 
 #message {
-    color: #007bff;
     font-size: 1.2em;
     font-weight: bold;
     margin-top: 10px;
@@ -84,5 +85,9 @@ input[type="text"]:focus {
 #score {
     font-size: 1.2em;
     font-weight: bold;
+    color: #333;
+}
+
+#score-value {
     color: #007bff;
 }
